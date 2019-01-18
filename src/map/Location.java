@@ -2,19 +2,29 @@ package map;
 
 public class Location {
 
-	private double latitude = 0;
-	private double longtitude = 0;
+	private double lat;
+	private double lon;
+
 	public Location(double lat, double lon) {
-		latitude = lat;
-		longtitude = lon;
+		this.setLat(lat);
+		this.setLon(lon);
+		// TODO Auto-generated constructor stub
 	}
+
 	public double getLat() {
-		return latitude; 
+		return lat;
 	}
+
+	public void setLat(double lat) {
+		this.lat = lat;
+	}
+
 	public double getLon() {
-		return longtitude; 
+		return lon;
 	}
-	
-	
+
+	public void setLon(double lon) {
+		this.lon = lon;
+	}
 
 }
